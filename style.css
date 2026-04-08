@@ -1,0 +1,500 @@
+:root {
+  --bg: #b88732;
+  --surface: #cfa247;
+  --ink: #8e7425;
+  --muted: #937b56;
+  --primary: #c6954a;
+  --secondary: #2e9b4b;
+  --accent: #f5b971;
+  --line: hsl(51, 46%, 59%);
+  --radius: 16px;
+  --shadow: 0 12px 25px rgba(57, 29, 8, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Source Sans 3", "Trebuchet MS", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 20% 0%, #ffe6c9 0, transparent 35%),
+    radial-gradient(circle at 85% 20%, #d9f0de 0, transparent 35%), var(--bg);
+  line-height: 1.5;
+}
+
+.top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  padding: 0.35rem 1rem;
+  background: rgba(255, 248, 239, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 6px 18px rgba(57, 29, 8, 0.08);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 0.5rem;
+  overflow: visible;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: "Bebas Neue", Impact, sans-serif;
+  font-size: 1.7rem;
+  letter-spacing: 0.02em;
+}
+
+.brand-badge {
+  width: 1.2rem;
+  height: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #f3b22f;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.2));
+}
+
+.brand-badge svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+.menu-toggle {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  align-content: center;
+  gap: 5px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 20px;
+  height: 2px;
+  background: var(--ink);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 999px;
+}
+
+.menu {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0.8rem;
+  width: min(220px, calc(100vw - 1.6rem));
+  display: grid;
+  gap: 0.35rem;
+  padding: 0.35rem;
+  background: rgba(255, 253, 249, 0.98);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 0 12px 28px rgba(47, 25, 10, 0.14);
+}
+
+.menu[hidden] {
+  display: none !important;
+}
+
+.menu a {
+  display: block;
+  padding: 0.4rem 0.25rem;
+  border-radius: 0;
+  background: transparent;
+  border: 0;
+  text-decoration: none;
+  color: #111;
+}
+
+.hero {
+  padding: 1rem 1rem 1.4rem;
+  margin: 0.75rem 1rem 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  line-height: 1.1;
+}
+
+h1,
+h2 {
+  font-family: "Bebas Neue", Impact, sans-serif;
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  margin-bottom: 0.4rem;
+  font-size: clamp(2rem, 8.5vw, 3.4rem);
+}
+
+h2 {
+  margin-bottom: 0.7rem;
+  font-size: clamp(1.8rem, 6.8vw, 2.5rem);
+}
+
+.hero-copy,
+.section-copy {
+  margin: 0 0 1rem;
+  color: var(--muted);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.btn {
+  border: none;
+  border-radius: 999px;
+  padding: 0.68rem 1.1rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.btn-outline {
+  color: var(--ink);
+  background: transparent;
+  border: 2px solid var(--secondary);
+}
+
+.section {
+  margin: 1rem;
+  padding: 1rem;
+  background: linear-gradient(180deg, #f2f9ff 0%, #dceeff 100%);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+#about {
+  background: linear-gradient(180deg, #eef8ff 0%, #9eb7d2 100%);
+}
+
+#featured-products {
+  background: linear-gradient(180deg, #f0f9ff 0%, #d6eaff 100%);
+}
+
+#location {
+  background: linear-gradient(180deg, #eef8ff 0%, #d3e8ff 100%);
+}
+
+#contact {
+  background: linear-gradient(180deg, #f1f9ff 0%, #dcecff 100%);
+}
+
+.category-grid,
+.product-grid,
+.contact-grid {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.card,
+.product-card,
+.contact-card {
+  padding: 0.9rem;
+  border: 2px solid #be1927;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #f5e6cc 59%, #c6954a 100%);
+}
+
+.carousel {
+  position: relative;
+  margin-bottom: 0.7rem;
+  border-radius: 12px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f0f7ff 0%, #e8f2ff 100%);
+}
+
+.carousel-images {
+  position: relative;
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+  background: #fff;
+  touch-action: pan-y;
+}
+
+.carousel-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  background: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.carousel-image.active {
+  opacity: 1;
+  z-index: 10;
+  pointer-events: auto;
+  cursor: zoom-in;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #c6def4;
+  color: #111;
+  font-size: 1.2rem;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.carousel-btn:hover {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.carousel-prev {
+  left: 0.4rem;
+}
+
+.carousel-next {
+  right: 0.4rem;
+}
+
+.carousel-counter {
+  position: absolute;
+  bottom: 0.4rem;
+  right: 0.4rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  z-index: 10;
+}
+
+.location-message {
+  margin-top: 0.7rem;
+  padding: 0.9rem;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #edf7ff 0%, #dfeeff 100%);
+  border: 1px solid #1784e4;
+}
+
+a {
+  color: var(--secondary);
+  font-weight: 700;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  text-decoration: none;
+}
+
+.social-icon {
+  width: 1.15rem;
+  height: 1.15rem;
+  display: block;
+  fill: currentColor;
+}
+
+#tiktokLink .social-icon {
+  color: #111;
+}
+
+#whatsappLink .social-icon {
+  color: #25d366;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition:
+    opacity 0.45s ease,
+    transform 0.45s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.site-footer {
+  margin: 0 1rem 1rem;
+  padding: 0.8rem 1rem;
+  text-align: center;
+  color: var(--muted);
+  background: rgba(255, 248, 239, 0.7);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.image-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.78);
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.image-modal[hidden] {
+  display: none;
+}
+
+.image-modal-content {
+  width: min(95vw, 920px);
+  max-height: 92vh;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.image-modal-close {
+  justify-self: end;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.95);
+  color: #111;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.image-modal-frame {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  height: min(74vh, 620px);
+  display: grid;
+  place-items: center;
+}
+
+.image-modal-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform-origin: center center;
+  transition: transform 0.2s ease;
+  user-select: none;
+  -webkit-user-drag: none;
+  touch-action: none;
+}
+
+.image-modal-controls {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.zoom-btn {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.5rem 0.9rem;
+  background: #fff;
+  color: #111;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (min-width: 700px) {
+  body {
+    padding-top: 5.4rem;
+  }
+
+  .top-nav {
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    grid-template-columns: 1fr auto;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .menu {
+    position: static;
+    width: auto;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .menu a {
+    padding: 0.4rem 0;
+  }
+
+  .hero,
+  .section,
+  .site-footer {
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .category-grid,
+  .product-grid,
+  .contact-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .product-image-slot {
+    min-height: 150px;
+  }
+
+  .carousel-images {
+    height: 240px;
+  }
+
+  .image-modal-frame {
+    height: min(78vh, 700px);
+  }
+}

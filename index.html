@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Megacious Business Center</title>
+    <meta
+      name="description"
+      content="Megacious Business Center deals on provisions, food, snacks, footwear, household equipment, and clothing."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="top-nav">
+      <div class="brand">
+        <span class="brand-text">Megacious Business Center</span>
+        <span class="brand-badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false">
+            <path
+              d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.6 7.2 17l.9-5.4L4.2 7.7l5.4-.8L12 2z"
+            ></path>
+          </svg>
+        </span>
+      </div>
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-expanded="false"
+        aria-controls="mainMenu"
+        aria-label="Open menu"
+        type="button"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="menu" id="mainMenu" hidden>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <header class="hero reveal" id="home">
+      <p class="eyebrow">Best Deals Every Day</p>
+      <h1>Megacious Business Center</h1>
+      <p class="hero-copy">
+        Your trusted plug for provisions, food, snacks, footwear, household
+        equipment,Cosmetics,Football Accessories,Insecticides and top clothing
+        items.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contact">Contact Us</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section reveal" id="about">
+        <h2>What We Sell</h2>
+        <div class="category-grid">
+          <article class="card">
+            <h3>Provisions &amp; Food</h3>
+            <p>
+              Everyday essentials and quality food supplies for home and hostel
+              life.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Snacks &amp; Household</h3>
+            <p>
+              Quick snacks and useful household equipment for daily comfort.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Footwear</h3>
+            <p>
+              Football footwear, palm slippers, and trainers for sport and
+              casual wear.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Clothing</h3>
+            <p>
+              Football tops and shorts, sleeveless vests, polo shirts, jeans,
+              and more.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Cosmetics</h3>
+            <p>
+              A wide range of beauty and personal care products for your
+              skin,Down to your Perfumes,Roll_ons and BodySpray.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="featured-products">
+        <h2>Featured Products</h2>
+        <p class="section-copy">
+          Explore our top picks across categories, showcasing quality and value
+          in every item.
+        </p>
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="carousel">
+              <div class="carousel-images">
+                <img
+                  class="carousel-image active"
+                  src="images/Jersey.png"
+                  alt="Football Tops Shorts 1"
+                />
+                <img
+                  class="carousel-image"
+                  src="images/Boots.png"
+                  alt="Football Tops Shorts 2"
+                />
+                <img
+                  class="carousel-image"
+                  src="images/jersey1.png"
+                  alt="Football Tops Shorts 3"
+                />
+              </div>
+              <button class="carousel-btn carousel-prev" data-carousel="0">
+                ❮
+              </button>
+              <button class="carousel-btn carousel-next" data-carousel="0">
+                ❯
+              </button>
+              <div class="carousel-counter">
+                <span class="carousel-current">1</span>/<span
+                  class="carousel-total"
+                  >3</span
+                >
+              </div>
+            </div>
+            <h3>Featured Product 1</h3>
+            <p>Sport-ready sets with sharp fit and comfort.</p>
+          </article>
+          <article class="product-card">
+            <div class="carousel">
+              <div class="carousel-images">
+                <img
+                  class="carousel-image active"
+                  src="images/Pams1.png"
+                  alt="Palms Slippers 1"
+                />
+                <img
+                  class="carousel-image"
+                  src="images/Pams2.png"
+                  alt="Palms Slippers 2"
+                />
+                <img
+                  class="carousel-image"
+                  src="images/Pams3.png"
+                  alt="Palms Slippers 3"
+                />
+              </div>
+              <button class="carousel-btn carousel-prev" data-carousel="1">
+                ❮
+              </button>
+              <button class="carousel-btn carousel-next" data-carousel="1">
+                ❯
+              </button>
+              <div class="carousel-counter">
+                <span class="carousel-current">1</span>/<span
+                  class="carousel-total"
+                  >3</span
+                >
+              </div>
+            </div>
+            <h3>Pams Footwear Collection</h3>
+            <p>We offer a wide range of quality footwear for all your needs.</p>
+          </article>
+          <article class="product-card">
+            <div class="carousel">
+              <div class="carousel-images">
+                <img
+                  class="carousel-image active"
+                  src="images/Polo1.png"
+                  alt="Polo Shirt 1"
+                />
+                <img
+                  class="carousel-image"
+                  src="images/Polo2.png"
+                  alt="Polo Shirt 2"
+                />
+                <img
+                  class="carousel-image"
+                  src="images/Polos.png"
+                  alt="Polo Shirt 3"
+                />
+              </div>
+              <button class="carousel-btn carousel-prev" data-carousel="2">
+                ❮
+              </button>
+              <button class="carousel-btn carousel-next" data-carousel="2">
+                ❯
+              </button>
+              <div class="carousel-counter">
+                <span class="carousel-current">1</span>/<span
+                  class="carousel-total"
+                  >3</span
+                >
+              </div>
+            </div>
+            <h3>Polos Collection</h3>
+            <p>Quality polo styles for clean casual wear.</p>
+          </article>
+          <article class="product-card">
+            <div class="carousel">
+              <div class="carousel-images">
+                <img
+                  class="carousel-image active"
+                  src="images/Jeans1.png"
+                  alt="Jeans"
+                />
+                <img
+                  class="carousel-image"
+                  src="images/Jeans2.png"
+                  alt="Jeans"
+                />
+                <img
+                  class="carousel-image"
+                  src="images/Jeans.png"
+                  alt="Jeans"
+                />
+              </div>
+              <button class="carousel-btn carousel-prev" data-carousel="3">
+                ❮
+              </button>
+              <button class="carousel-btn carousel-next" data-carousel="3">
+                ❯
+              </button>
+              <div class="carousel-counter">
+                <span class="carousel-current">1</span>/<span
+                  class="carousel-total"
+                  >3</span
+                >
+              </div>
+            </div>
+            <h3>Nice Affordable Jeans</h3>
+            <p>Comfortable and stylish jeans at great prices.</p>
+          </article>
+          <article class="product-card">
+            <div class="carousel">
+              <div class="carousel-images">
+                <img
+                  class="carousel-image active"
+                  src="images/Shirts1.png"
+                  alt="Shirt 1"
+                />
+                <img
+                  class="carousel-image"
+                  src="images/Shirts2.png"
+                  alt="Shirt 2"
+                />
+                <img
+                  class="carousel-image"
+                  src="images/Shirts3.png"
+                  alt="Shirt 3"
+                />
+              </div>
+              <button class="carousel-btn carousel-prev" data-carousel="4">
+                ❮
+              </button>
+              <button class="carousel-btn carousel-next" data-carousel="4">
+                ❯
+              </button>
+              <div class="carousel-counter">
+                <span class="carousel-current">1</span>/<span
+                  class="carousel-total"
+                  >3</span
+                >
+              </div>
+            </div>
+            <h3>Shirts Of Quality Brands</h3>
+            <p>Nice sharp fit and comfort.</p>
+          </article>
+          <article class="product-card">
+            <div class="carousel">
+              <div class="carousel-images">
+                <img
+                  class="carousel-image active"
+                  src="images/Provision1.jpeg"
+                  alt="Provisions"
+                />
+                <img
+                  class="carousel-image"
+                  src="images/Provision2.png"
+                  alt="Provisions"
+                />
+                <img
+                  class="carousel-image"
+                  src="images/Provision3.png"
+                  alt="Provisions"
+                />
+              </div>
+              <button class="carousel-btn carousel-prev" data-carousel="5">
+                ❮
+              </button>
+              <button class="carousel-btn carousel-next" data-carousel="5">
+                ❯
+              </button>
+              <div class="carousel-counter">
+                <span class="carousel-current">1</span>/<span
+                  class="carousel-total"
+                  >3</span
+                >
+              </div>
+            </div>
+            <h3>Provisions Available</h3>
+            <p>Check out our wide range of provisions available!</p>
+          </article>
+          <article class="product-card">
+            <div class="carousel">
+              <div class="carousel-images">
+                <img
+                  class="carousel-image active"
+                  src="images/Cosmetics1.jpeg"
+                  alt="Cosmetics "
+                />
+                <img
+                  class="carousel-image"
+                  src="images/Cosmetics2.jpeg"
+                  alt="Cosmetics "
+                />
+                <img
+                  class="carousel-image"
+                  src="images/Cosmetics3.jpeg"
+                  alt="Cosmetics "
+                />
+              </div>
+              <button class="carousel-btn carousel-prev" data-carousel="6">
+                ❮
+              </button>
+              <button class="carousel-btn carousel-next" data-carousel="6">
+                ❯
+              </button>
+              <div class="carousel-counter">
+                <span class="carousel-current">1</span>/<span
+                  class="carousel-total"
+                  >3</span
+                >
+              </div>
+            </div>
+            <h3>Good Cosmetic Products</h3>
+            <p>Your Body deserves the best care.</p>
+          </article>
+          <article class="product-card">
+            <div class="carousel">
+              <div class="carousel-images">
+                <img
+                  class="carousel-image active"
+                  src="images/Tshirt1.png"
+                  alt="Tshirts"
+                />
+                <img
+                  class="carousel-image"
+                  src="images/Tshirt2.png"
+                  alt="Tshirts"
+                />
+                <img
+                  class="carousel-image"
+                  src="images/Tshirt3.png"
+                  alt="Tshirts"
+                />
+              </div>
+              <button class="carousel-btn carousel-prev" data-carousel="7">
+                ❮
+              </button>
+              <button class="carousel-btn carousel-next" data-carousel="7">
+                ❯
+              </button>
+              <div class="carousel-counter">
+                <span class="carousel-current">1</span>/<span
+                  class="carousel-total"
+                  >3</span
+                >
+              </div>
+            </div>
+            <h3>Affordable Quality Tshirts</h3>
+            <p>Stylish t-shirts at budget-friendly prices.</p>
+          </article>
+          <article class="product-card">
+            <div class="carousel">
+              <div class="carousel-images">
+                <img
+                  class="carousel-image active"
+                  src="images/Cap1.png"
+                  alt="Caps"
+                />
+                <img class="carousel-image" src="images/Cap2.png" alt="Caps" />
+                <img class="carousel-image" src="images/Cap3.png" alt="Caps" />
+              </div>
+              <button class="carousel-btn carousel-prev" data-carousel="8">
+                ❮
+              </button>
+              <button class="carousel-btn carousel-next" data-carousel="8">
+                ❯
+              </button>
+              <div class="carousel-counter">
+                <span class="carousel-current">1</span>/<span
+                  class="carousel-total"
+                  >3</span
+                >
+              </div>
+            </div>
+            <h3>Good Quality Caps</h3>
+            <p>Protect your head in style with our premium quality caps.</p>
+          </article>
+          <article class="product-card">
+            <div class="carousel">
+              <div class="carousel-images">
+                <img
+                  class="carousel-image active"
+                  src="images/Plane2.jpeg"
+                  alt="Clothes"
+                />
+                <img
+                  class="carousel-image"
+                  src="images/Vest.png"
+                  alt="Clothes"
+                />
+                <img
+                  class="carousel-image"
+                  src="images/Plane3.jpeg"
+                  alt="Clothes"
+                />
+              </div>
+              <button class="carousel-btn carousel-prev" data-carousel="9">
+                ❮
+              </button>
+              <button class="carousel-btn carousel-next" data-carousel="9">
+                ❯
+              </button>
+              <div class="carousel-counter">
+                <span class="carousel-current">1</span>/<span
+                  class="carousel-total"
+                  >3</span
+                >
+              </div>
+            </div>
+            <h3>Affordable Plane Trousers & Vest</h3>
+            <p>Performance and Good style in one package.</p>
+          </article>
+          <article class="product-card">
+            <div class="carousel">
+              <div class="carousel-images">
+                <img
+                  class="carousel-image active"
+                  src="images/Shoe1.png"
+                  alt="Shoes"
+                />
+                <img
+                  class="carousel-image"
+                  src="images/Shoes.png"
+                  alt="Shoes"
+                />
+                <img
+                  class="carousel-image"
+                  src="images/Shoe2.png"
+                  alt="Shoes"
+                />
+              </div>
+              <button class="carousel-btn carousel-prev" data-carousel="10">
+                ❮
+              </button>
+              <button class="carousel-btn carousel-next" data-carousel="10">
+                ❯
+              </button>
+              <div class="carousel-counter">
+                <span class="carousel-current">1</span>/<span
+                  class="carousel-total"
+                  >3</span
+                >
+              </div>
+            </div>
+            <h3>Affordable Shoe Wears</h3>
+            <p>Comfortable and stylish footwear for You,YOU`LL LOVE IT.</p>
+          </article>
+          <article class="product-card">
+            <div class="carousel">
+              <div class="carousel-images">
+                <img
+                  class="carousel-image active"
+                  src="images/Books.jpeg"
+                  alt="Note Books"
+                />
+                <img
+                  class="carousel-image"
+                  src="images/Book2.png"
+                  alt="Note Books"
+                />
+                <img
+                  class="carousel-image"
+                  src="images/Pens.png"
+                  alt="Note Books"
+                />
+              </div>
+              <button class="carousel-btn carousel-prev" data-carousel="11">
+                ❮
+              </button>
+              <button class="carousel-btn carousel-next" data-carousel="11">
+                ❯
+              </button>
+              <div class="carousel-counter">
+                <span class="carousel-current">1</span>/<span
+                  class="carousel-total"
+                  >3</span
+                >
+              </div>
+            </div>
+            <h3>Nice HardCover Note Books</h3>
+            <p>Explore our collection of well-bound books for Your Lectures.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="location">
+        <h2>Visit Us</h2>
+        <p class="section-copy">
+          Tap the button to see our store location details.
+        </p>
+        <button class="btn btn-outline" id="locationBtn" type="button">
+          Find Our Location
+        </button>
+        <div
+          id="locationMessage"
+          class="location-message"
+          aria-live="polite"
+          hidden
+        >
+          <strong>Location Tag:</strong> You can visit us at Tetfund(Boys)
+          Hostel Second floor FUTO.
+        </div>
+      </section>
+
+      <section class="section reveal" id="contact">
+        <h2>Connect With Us</h2>
+        <div class="contact-grid">
+          <article class="contact-card">
+            <h3>TikTok Handle</h3>
+
+            <a
+              href="https://www.tiktok.com/@megacious30?_r=1&_t=ZS-95LVa7VsqMD"
+              id="tiktokLink"
+              class="social-link"
+              aria-label="TikTok Handle Placeholder"
+            >
+              <svg
+                class="social-icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.28v13.58a2.8 2.8 0 1 1-2.8-2.8c.31 0 .61.05.9.15V9.59c-.3-.04-.6-.06-.9-.06A6.08 6.08 0 1 0 15.82 15V8.23a8.1 8.1 0 0 0 4.72 1.5V6.69h-.95z"
+                ></path>
+              </svg>
+              <span>@Megacious30</span>
+            </a>
+          </article>
+          <article class="contact-card">
+            <h3>Contact Us on WhatsApp</h3>
+
+            <a
+              href="https://wa.me/2349131858997"
+              id="whatsappLink"
+              class="social-link"
+              aria-label="WhatsApp Link Placeholder"
+            >
+              <svg
+                class="social-icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M12.04 2C6.5 2 2 6.39 2 11.8c0 1.9.57 3.66 1.56 5.15L2 22l5.24-1.5a10.2 10.2 0 0 0 4.8 1.2h.01c5.54 0 10.04-4.4 10.04-9.8C22.09 6.4 17.59 2 12.04 2zm5.86 13.76c-.24.66-1.4 1.23-1.94 1.31-.5.08-1.15.12-1.86-.11-.43-.14-.98-.32-1.7-.62-2.99-1.25-4.93-4.16-5.08-4.36-.14-.2-1.2-1.56-1.2-2.98s.75-2.1 1.02-2.39c.27-.3.58-.37.78-.37.2 0 .4 0 .58.01.18 0 .43-.07.67.5.24.58.81 1.99.88 2.13.07.14.12.3.02.49-.1.2-.15.31-.3.47-.14.16-.3.36-.43.48-.14.13-.28.27-.12.53.16.26.72 1.16 1.55 1.88 1.06.91 1.96 1.2 2.23 1.34.27.13.43.11.58-.07.15-.17.66-.75.84-1.01.18-.26.36-.21.6-.13.24.09 1.55.72 1.82.85.27.13.45.2.52.31.07.11.07.64-.17 1.3z"
+                ></path>
+              </svg>
+              <span>Chat on WhatsApp</span>
+            </a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Megacious Business Center. All rights reserved.</p>
+    </footer>
+
+    <div id="imageModal" class="image-modal" hidden aria-hidden="true">
+      <div
+        class="image-modal-content"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Expanded product image viewer"
+      >
+        <button
+          class="image-modal-close"
+          id="imageModalClose"
+          type="button"
+          aria-label="Close image viewer"
+        >
+          &times;
+        </button>
+        <div class="image-modal-frame">
+          <img id="imageModalImg" class="image-modal-img" src="" alt="" />
+        </div>
+        <div class="image-modal-controls">
+          <button
+            id="zoomOutBtn"
+            type="button"
+            class="zoom-btn"
+            aria-label="Zoom out"
+          >
+            -
+          </button>
+          <button
+            id="zoomResetBtn"
+            type="button"
+            class="zoom-btn"
+            aria-label="Reset zoom"
+          >
+            Reset
+          </button>
+          <button
+            id="zoomInBtn"
+            type="button"
+            class="zoom-btn"
+            aria-label="Zoom in"
+          >
+            +
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
